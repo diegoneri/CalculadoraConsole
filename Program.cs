@@ -1,4 +1,5 @@
 ﻿using System;
+using Figgle;
 
 namespace CalculadoraConsole
 {
@@ -14,8 +15,6 @@ namespace CalculadoraConsole
             Program.ApresentaCalculadora();
 
 
-
-
             Console.Write("\nDigite o Primeiro número: ");
             numeroValido = Double.TryParse(Console.ReadLine(), out numero1);
 
@@ -29,8 +28,7 @@ namespace CalculadoraConsole
             }
 
 
-
-
+            
             Console.Write("\nDigite a Operação desejada: ");
             operacaoValida = Int32.TryParse(Console.ReadLine(), out operacao);
 
@@ -42,6 +40,9 @@ namespace CalculadoraConsole
                 Console.ResetColor();
                 Environment.Exit(1);
             }
+
+
+
 
 
 
