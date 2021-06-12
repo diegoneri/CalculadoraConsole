@@ -74,3 +74,4 @@ dotnet CalculadoraConsole.dll
 - [Prof. Ermogenes](https://github.com/ermogenes)
 - [Prof. Neri](https://github.com/diegoneri)
 - [Etec Adolpho Berezin](http://eteab.com.br/cms/)
+

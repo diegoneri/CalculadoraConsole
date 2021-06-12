@@ -6,8 +6,10 @@ namespace CalculadoraConsole
     {
         static void Main(string[] args)
         {
+            
             string operacao;
 
+            
             Program.ExibeDesenhoCalculadora();
             Program.ApresentaCalculadora();
 
@@ -43,6 +45,13 @@ namespace CalculadoraConsole
                     radiacao();
                     break;
 
+                case "7":
+                    sobre();
+                    break;
+
+                case "0":
+                    Environment.Exit(-1);
+                    break;
 
                 default:
                     Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -55,6 +64,9 @@ namespace CalculadoraConsole
 
             }
 
+            
+
+            
 
 
         }
@@ -86,6 +98,9 @@ namespace CalculadoraConsole
             Console.WriteLine("║ '4' Para Divisão (÷)         ║");
             Console.WriteLine("║ '5' Para Exponenciação (x²)  ║");
             Console.WriteLine("║ '6' Para Radiação (√)        ║");
+            Console.WriteLine("║                              ║");
+            Console.WriteLine("║ '7' Sobre                    ║");
+            Console.WriteLine("║ '0' Para Sair do Programa    ║");
             Console.WriteLine("╚══════════════════════════════╝");
             Console.ResetColor();
 
@@ -133,6 +148,8 @@ namespace CalculadoraConsole
             Console.ResetColor();
 
             FinalizaPrograma();
+
+            
 
         }
         static void subtracao()
@@ -279,6 +296,7 @@ namespace CalculadoraConsole
 
         }
         static void radiacao()
+    
         {
             bool numero1val;
             double numero1, resultado;
@@ -301,6 +319,21 @@ namespace CalculadoraConsole
             Console.ResetColor();
 
             FinalizaPrograma();
+
+        }
+        static void sobre()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("Site do Projeto > https://natansantos155.github.io/CalculadoraConsole/");
+            Console.WriteLine("Desenvolvedor > Natã dos Santos Silva");
+            Console.WriteLine("GitHub > https://github.com/NatanSantos155\n");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("Agradecimentos");
+            Console.WriteLine("Prof. Neri");
+            Console.WriteLine("Prof. Ermogenes");
+            Console.WriteLine("Etec Adolpho Berezin");
+            Console.ResetColor();
+            Console.ReadKey();
 
         }
     }
