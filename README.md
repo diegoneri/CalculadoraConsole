@@ -34,7 +34,6 @@ Digite o Segundo número...: 13
 
 ## _Download_
 🔽
-
 ## Agradecimentos
 - [Prof. Ermogenes](https://github.com/ermogenes)
 - [Prof. Neri](https://github.com/diegoneri)
