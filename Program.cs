@@ -48,6 +48,8 @@ namespace CalculadoraConsole
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Escolha uma opção válida");
                     Console.ResetColor();
+                    Console.ReadKey();
+                    Environment.Exit(-1);
                     break;
 
 
@@ -59,8 +61,8 @@ namespace CalculadoraConsole
         static void ExibeDesenhoCalculadora()
         {
             Console.Clear();
-            Console.WriteLine("Bem vindo a nossa Calculadora");
-            Console.ForegroundColor = ConsoleColor.Black ;
+            Console.WriteLine("Bem vindo a NS Calculadora");
+            Console.ForegroundColor = ConsoleColor.DarkBlue ;
             Console.WriteLine("╔═══════════════╗");
             Console.WriteLine("╠══Calculadora══╣");
             Console.WriteLine("║ MC| MR| M-| M+║");
