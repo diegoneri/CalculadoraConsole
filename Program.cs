@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CalculadoraConsole
 {
@@ -6,75 +6,70 @@ namespace CalculadoraConsole
     {
         static void Main(string[] args)
         {
-            
+
             string operacao;
 
-            
+
             Program.ExibeDesenhoCalculadora();
-            Program.ApresentaCalculadora();
-
-            Console.WriteLine("Digite a Operação desejada.");
-            operacao = (Console.ReadLine());
-            Console.WriteLine();
-
-
-
-            switch (operacao)
+            do
             {
-                case "1":
-                    soma();
-                    break;
+                Program.ApresentaCalculadora();
 
-                case "2":
-                    subtracao();
-                    break;
+                Console.WriteLine("Digite a Operação desejada.");
+                operacao = (Console.ReadLine());
+                Console.WriteLine();
 
-                case "3":
-                    multiplicacao();
-                    break;
+                switch (operacao)
+                {
+                    case "1":
+                        soma();
+                        break;
 
-                case "4":
-                    divisao();
-                    break;
+                    case "2":
+                        subtracao();
+                        break;
 
-                case "5":
-                    exponenciacao();
-                    break;
+                    case "3":
+                        multiplicacao();
+                        break;
 
-                case "6":
-                    radiacao();
-                    break;
+                    case "4":
+                        divisao();
+                        break;
 
-                case "7":
-                    sobre();
-                    break;
+                    case "5":
+                        exponenciacao();
+                        break;
 
-                case "0":
-                    Environment.Exit(-1);
-                    break;
+                    case "6":
+                        radiacao();
+                        break;
 
-                default:
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.WriteLine("Escolha uma opção válida");
-                    Console.ResetColor();
-                    Console.ReadKey();
-                    Environment.Exit(-1);
-                    break;
+                    case "7":
+                        sobre();
+                        break;
 
+                    case "0":
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine("Obrigado por utilizar nosso programa!");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        break;
 
-            }
-
-            
-
-            
-
-
+                    default:
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("Escolha uma opção válida");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        break;
+                }
+            } while (operacao != "0");
         }
         static void ExibeDesenhoCalculadora()
         {
             Console.Clear();
             Console.WriteLine("Bem vindo a NS Calculadora");
-            Console.ForegroundColor = ConsoleColor.DarkBlue ;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("╔═══════════════╗");
             Console.WriteLine("╠══Calculadora══╣");
             Console.WriteLine("║ MC| MR| M-| M+║");
@@ -149,7 +144,7 @@ namespace CalculadoraConsole
 
             FinalizaPrograma();
 
-            
+
 
         }
         static void subtracao()
@@ -296,7 +291,7 @@ namespace CalculadoraConsole
 
         }
         static void radiacao()
-    
+
         {
             bool numero1val;
             double numero1, resultado;
